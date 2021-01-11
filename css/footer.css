@@ -11,7 +11,7 @@
 
 /* Footer */
 
-footer {
+.footer {
   background-color: var(--main-bg-color);
   color: var(--main-social-network);
   padding: 10px;
