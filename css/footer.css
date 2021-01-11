@@ -1,0 +1,42 @@
+:root {
+  --main-bg-color: #212f3d;
+  --main-social-network: #ffffff;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--main-bg-color);
+  color: var(--main-social-network);
+  padding: 10px;
+}
+
+.redes--sociales {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes--sociales a {
+  margin: 10px;
+  text-decoration: none;
+  color: var(--main-social-network);
+}
+
+.redes--sociales i {
+  font-size: 20px;
+}
+
+.redes--copyright {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Footer */
