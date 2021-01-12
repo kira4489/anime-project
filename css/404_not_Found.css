@@ -16,6 +16,7 @@ body {
 
 .section-main__div h4 {
   color: var(--font-color);
+  text-transform: capitalize;
   font-size: 30px;
   text-align: center;
 }
