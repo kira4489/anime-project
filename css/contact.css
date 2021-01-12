@@ -1,0 +1,11 @@
+@import "./styles.css";
+
+body{
+    background-color: var(--contact-bg-color);
+}
+
+.contact--info{
+ display: flex;
+  flex-direction: row;
+}
+

@@ -4,3 +4,8 @@
     --footer-social-network: #ffffff;
   }
   /*Footer*/
+
+  :root{
+    --contact-bg-color: #212f3d;
+  }
+
