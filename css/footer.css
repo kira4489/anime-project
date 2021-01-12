@@ -1,7 +1,4 @@
-:root {
-  --footer-bg-color: #212f3d;
-  --footer-social-network: #ffffff;
-}
+@import "./Styles.css";
 
 *{
  margin: 0;
