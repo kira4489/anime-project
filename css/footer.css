@@ -1,6 +1,6 @@
 :root {
-  --main-bg-color: #212f3d;
-  --main-social-network: #ffffff;
+  --footer-bg-color: #212f3d;
+  --footer-social-network: #ffffff;
 }
 
 *{
@@ -12,31 +12,31 @@
 /* Footer */
 
 .footer {
-  background-color: var(--main-bg-color);
-  color: var(--main-social-network);
-  padding: 10px;
+  background-color: var(--footer-bg-color);
+  color: var(--footer-social-network);
+  padding: 0.625rem;
 }
 
-.redes--sociales {
+.social__network {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.redes--sociales a {
-  margin: 10px;
+.social__network a {
+  margin: 0.625rem;
   text-decoration: none;
   color: var(--main-social-network);
 }
 
-.redes--sociales i {
+.social__network i {
   font-size: 20px;
 }
 
-.redes--copyright {
+.social__network--copyright {
   text-align: center;
-  padding: 20px;
+  padding: 0.625rem;
 }
 
 /* Footer */
