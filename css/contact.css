@@ -1,11 +1,5 @@
 @import "./styles.css";
 
-body{
-    background-color: var(--contact-bg-color);
-}
-
-
-
 .contact--info{
   display: flex;
   width: 100%;
