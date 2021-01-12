@@ -1,0 +1,22 @@
+@import "./Styles.css";
+
+body {
+  background-color: var(--background-404);
+}
+
+.section__principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.main__principal h4 {
+  color: var(--font-color);
+}
+
+.main__principal > .button a {
+  text-decoration: none;
+  color: var(--font-color);
+}
