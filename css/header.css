@@ -42,10 +42,17 @@
 .main-menu__link {
     text-decoration: none;
     text-transform: uppercase;
+    color: var(--header-text-color);
+}
+
+.main-menu__item {
+    margin: 30px auto;
+    text-align: center;
 }
 
 .show {
-    display: block;   
+    display: block;
+    padding-left: 0;
 }
 
 @media screen and (min-width: 768px) {
