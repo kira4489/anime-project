@@ -1,7 +1,6 @@
-:root{
-/* variables para el pagenotfound404*/
---background-404: #212f3d;
---font-color: #ffffff;
---button-color: #0F576A;
-}
-/* variables para el pagenotfound404*/
+:root {
+    /*Footer*/
+    --footer-bg-color: #212f3d;
+    --footer-social-network: #ffffff;
+  }
+  /*Footer*/
