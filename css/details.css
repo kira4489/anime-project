@@ -1,0 +1,42 @@
+.anime-section {
+    margin: 2rem;
+}
+
+
+.anime__img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.anime-pills {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .5rem;
+}
+
+.anime__pill--blue,
+.anime__pill--orange,
+.anime__pill--red {  
+    display: inline;
+    margin: .2rem;
+    padding: .3rem .6rem;
+    border-radius: 24px;
+    color: white;
+}
+
+.anime__pill--blue {
+    background-color: blue;
+}
+
+.anime__pill--orange {
+    background-color: orange;
+}
+
+.anime__pill--red {
+    background-color: red;
+}
+
+.anime__details {
+    text-align: left;
+}
