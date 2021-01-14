@@ -59,17 +59,18 @@ textarea {
   padding-top: 10px;
 }
 
-@media(max-width:900px){
+
+
+/* @media(max-width:900px){
   .container{
     display: flex;
     flex-direction: column;
   }
 }
 
-/* @media(min-width:375px){
-  .container-img{
-
+ @media(min-width:375px){ 
+  .container-mobile{
+   background: url(../img/contact-mobile.jpg);
+   background-position: center center;
   }
-  .contact-info__input form {
-  }
-} */
+ } */
