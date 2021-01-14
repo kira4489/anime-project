@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/normalize.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="/css/footer.css" />
     <script
       src="https://kit.fontawesome.com/4faa9fe1ce.js"
       crossorigin="anonymous"
     ></script>
+
+
     <title>Anime-Full | Home</title>
-  </head>
-  <body>
+</head>
+
+<body>
+    <!-- Header with search bar -->
+    <header class="header">
+        
+        <nav class="nav-bar">
+            <div class="top-bar">
+                <a class="top-bar__brand" href="#">Anime-Full</a>
+                <form class="search-form">
+                    <input class= "search-form__input" type="search" id="search-anime" name="q" placeholder="search anime">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <span class="icon-menu" id="icon-menu">
+                    <i class="fas fa-bars"></i>
+                </span>    
+            </div>
+
+            <ul class="main-menu" id="main-menu">
+                <li class="main-menu__item"><a class= "main-menu__link" href="#">Home</a></li>
+                <li class="main-menu__item"><a class= "main-menu__link" href="">Anime Top</a></li>
+                <li class="main-menu__item"><a class= "main-menu__link" href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!---Header with search bar-->
+
     <!--Footer-->
     <footer>
       <section class="footer">
@@ -32,5 +62,7 @@
       </section>
     </footer>
     <!--Footer-->
+
+      <script src="./js/navbar.js"></script>
   </body>
 </html>
