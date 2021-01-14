@@ -7,15 +7,21 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--contact-bg-color);
 }
 
-.contact--info__input {
+.container-img{
+  width: auto;
+  height: auto;
+}
+
+.contact-info__input {
   display: block;
   margin: auto;
 }
 
-.contact--info__input form {
+.contact-info__input form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +32,7 @@
   background-color: var(--contact-input-color);
 }
 
-.contact--info__title {
+.contact-info__title {
   margin-top: 40px;
   margin-bottom: 50px;
   text-align: center;
@@ -36,9 +42,6 @@
 input[type="text"],
 select,
 textarea {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   padding: 12px;
   margin-top: 6px;
@@ -56,3 +59,17 @@ textarea {
   padding-top: 10px;
 }
 
+@media(max-width:900px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* @media(min-width:375px){
+  .container-img{
+
+  }
+  .contact-info__input form {
+  }
+} */
