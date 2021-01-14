@@ -4,11 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="./css/details.css">
+
+    <!-- icons -->
+    <script
+    src="https://kit.fontawesome.com/4faa9fe1ce.js"
+    crossorigin="anonymous"
+  ></script>
 
     <title>Anime-full | Details</title>
 </head>
 <body>
+    <!-- Header with search bar -->
+    <header class="header">
+        
+        <nav class="nav-bar">
+            <div class="top-bar">
+                <a class="top-bar__brand" href="#">Anime-Full</a>
+                <form class="search-form">
+                    <input class= "search-form__input" type="search" id="search-anime" name="q" placeholder="search anime">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <span class="icon-menu" id="icon-menu">
+                    <i class="fas fa-bars"></i>
+                </span>    
+            </div>
+
+            <ul class="main-menu" id="main-menu">
+                <li class="main-menu__item"><a class= "main-menu__link" href="#">Home</a></li>
+                <li class="main-menu__item"><a class= "main-menu__link" href="">Anime Top</a></li>
+                <li class="main-menu__item"><a class= "main-menu__link" href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!---Header with search bar-->
+
     <main>
         <div class="anime-section">
             <h1 class="anime__title">Anime Title</h1>
@@ -23,5 +57,28 @@
             <p class="anime__details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad id soluta et quo quos vel, eligendi, dicta ex ea, nobis sequi. Tempora sequi vero dolorem minima ipsum expedita numquam optio quidem! Similique pariatur reiciendis quas quia provident minus nisi quam! Eveniet ut hic exercitationem maxime similique accusantium libero accusamus autem, sit nesciunt odio veritatis consequatur blanditiis fugiat recusandae modi facere sequi fugit, minus unde iusto tempore aspernatur. Corrupti repellendus ut laborum, atque quaerat vero inventore soluta veritatis dolores mollitia earum nostrum doloremque dicta eveniet magni blanditiis porro iusto exercitationem nisi aliquid. Ipsa quia blanditiis quos necessitatibus sequi nam eaque mollitia.</p>
         </div>
     </main>
+
+    <!--Footer-->
+    <footer>
+        <section class="footer">
+          <div class="social-network">
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="social-network__copyright">
+            <p>Anime Full © 2021</p>
+          </div>
+        </section>
+      </footer>
+      <!--Footer-->
+  
+        <script src="./js/navbar.js"></script>
 </body>
 </html>
