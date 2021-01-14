@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/ainme-top.css">
+      <!-- Styles -->
+      <link rel="stylesheet" href="./css/normalize.css">
+      <link rel="stylesheet" href="./css/header.css">
+      <link rel="stylesheet" href="/css/footer.css" />
+      <script
+        src="https://kit.fontawesome.com/4faa9fe1ce.js"
+        crossorigin="anonymous"
+      ></script>
+
+    <link rel="stylesheet" href="./css/anime-top.css">
     <title>Anime-Full | Top</title>
 </head>
 <body>
+     <!-- Header with search bar -->
+     <header class="header">
+        
+        <nav class="nav-bar">
+            <div class="top-bar">
+                <a class="top-bar__brand" href="#">Anime-Full</a>
+                <form class="search-form">
+                    <input class= "search-form__input" type="search" id="search-anime" name="q" placeholder="search anime">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <span class="icon-menu" id="icon-menu">
+                    <i class="fas fa-bars"></i>
+                </span>    
+            </div>
+
+            <ul class="main-menu" id="main-menu">
+                <li class="main-menu__item"><a class= "main-menu__link" href="#">Home</a></li>
+                <li class="main-menu__item"><a class= "main-menu__link" href="">Anime Top</a></li>
+                <li class="main-menu__item"><a class= "main-menu__link" href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!---Header with search bar-->
+
     <main>
         <div class="top-section">
             <h1 class="top-section__title">Top 10 Anime </h1>
@@ -16,6 +49,7 @@
                     <p class="anime-header__number">1</p>
                     <h2 class="anime-header__title">Anime Name</h2>
                 </div>
+                <img src="./img/anime.jpg" alt="anime image">
                 <div class="anime-pills">
                     <p class="anime__pill--orange">gender</p>
                     <p class="anime__pill--red">season</p>
@@ -25,5 +59,28 @@
             </section>
         </div>
     </main>
+
+    <!--Footer-->
+    <footer>
+        <section class="footer">
+          <div class="social-network">
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="social-network__copyright">
+            <p>Anime Full © 2021</p>
+          </div>
+        </section>
+      </footer>
+      <!--Footer-->
+  
+    <script src="./js/navbar.js"></script>
 </body>
 </html>
