@@ -1,0 +1,58 @@
+:root {
+  --contact-bg-color: #212f3d;
+  --contact-input-color: #008487;
+  --contact-colors: #ffffff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  background-color: var(--contact-bg-color);
+}
+
+.contact--info__input {
+  display: block;
+  margin: auto;
+}
+
+.contact--info__input form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--contact-input-color);
+}
+
+.contact--info__title {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--contact-colors);
+}
+
+input[type="text"],
+select,
+textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.message {
+  height: 100px;
+}
+
+.submit {
+  color: var(--contact-colors);
+  background: var(--contact-bg-color);
+  padding-top: 10px;
+}
+
