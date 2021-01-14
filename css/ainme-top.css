@@ -1,0 +1,47 @@
+.top-section {
+    margin: 2rem;
+}
+
+.top-section__title {
+    text-align: center;
+}
+
+.anime-header {
+    display: flex;
+    margin: 1rem;
+}
+
+.anime-header__title {
+    margin-left: 1rem;
+}
+.anime-pills {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .5rem;
+}
+
+.anime__pill--blue,
+.anime__pill--orange,
+.anime__pill--red {  
+    display: inline;
+    margin: .2rem;
+    padding: .3rem .6rem;
+    border-radius: 24px;
+    color: white;
+}
+
+.anime__pill--blue {
+    background-color: blue;
+}
+
+.anime__pill--orange {
+    background-color: orange;
+}
+
+.anime__pill--red {
+    background-color: red;
+}
+
+.anime__details {
+    text-align: left;
+}
