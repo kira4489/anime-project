@@ -14,7 +14,11 @@
       src="https://kit.fontawesome.com/4faa9fe1ce.js"
       crossorigin="anonymous"
     ></script>
-
+ <!-- Slider-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="./public/css/swiper.css"/>
     <title>Anime-Full | Home</title>
 </head>
 
@@ -43,6 +47,26 @@
     </header>
     <!---Header with search bar-->
 
+
+ <!--Slider-->
+ <div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img class="swiper-slide__img" src="./public/assets/img/back1.jpg">
+    </div>
+    <div class="swiper-slide">
+      <img class="swiper-slide__img" src="./public/assets/img/back2.jpg">
+    </div>
+    <div class="swiper-slide">
+      <img class="swiper-slide__img" src="./public/assets/img/back3.jpg">
+    </div>
+  </div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+ <!--Slider-->
+
     <!--Footer-->
     <footer>
       <section class="footer">
@@ -63,7 +87,8 @@
       </section>
     </footer>
     <!--Footer-->
-
-      <script src="/public/js/navbar.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/swiper.js"></script>
+    <script src="/public/js/navbar.js"></script>
   </body>
 </html>
