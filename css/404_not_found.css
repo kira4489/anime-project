@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "title";
+  src: url("../font/Antroposofia.ttf");
+}
+
 :root{
     /* variables para el pagenotfound404*/
     --background-404: #212f3d;
@@ -22,6 +27,7 @@ body {
 
 .section-main__info h1 {
   color: var(--font-color);
+  font-family: "title";
   text-transform: capitalize;
   font-size: 30px;
   text-align: center;
@@ -30,6 +36,7 @@ body {
 .section-main__info p{
   text-align: center;
   font-size: 20px;
+  font-family: "title";
   margin-top: 30px;
   text-transform: capitalize;
   margin-bottom: 30px;
