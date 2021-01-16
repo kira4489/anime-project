@@ -1,9 +1,16 @@
+@font-face {
+    font-family: "title-top";
+    src: url("/public/assets/font/Boogaloo-Regular.ttf");
+}
+
 .top-section {
     margin: 2rem;
 }
 
 .top-section__title {
     text-align: center;
+    font-family: 'title-top', cursive;
+    font-size: 3rem;
 }
 
 .anime-header {
@@ -13,6 +20,9 @@
 
 .anime-header__title {
     margin-left: 1rem;
+    font-family: 'title-top', cursive;
+    font-size: 2rem;
+    letter-spacing: 3px;
 }
 .anime-pills {
     display: flex;
