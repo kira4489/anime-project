@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "paragraph";
+  src: url("/public/assets/font/Antroposofia.ttf");
+}
+
+@font-face{
+  font-family: "title";
+  src: url("/public/assets/font/Boogaloo-Regular.ttf")
+}
+
 :root {
   --contact-bg-color: #212f3d;
   --contact-input-color: #008487;
@@ -36,7 +46,12 @@
   margin-top: 40px;
   margin-bottom: 50px;
   text-align: center;
+  font-family: "title";
   color: var(--contact-colors);
+}
+
+.container-mobile{
+  display: none;
 }
 
 input[type="text"],
@@ -44,6 +59,7 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
+  font-family: "paragraph";
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -57,6 +73,7 @@ textarea {
   color: var(--contact-colors);
   background: var(--contact-bg-color);
   padding-top: 10px;
+ font-family: "paragraph";
 }
 
 
@@ -66,11 +83,24 @@ textarea {
     display: flex;
     flex-direction: column;
   }
+} */
+@media(max-width:800px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
- @media(min-width:375px){ 
-  .container-mobile{
-   background: url(../img/contact-mobile.jpg);
-   background-position: center center;
+@media(max-width:400px){
+  /* body{
+    background-image: url("../assets/img/contact-info.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+  .contact-info__input{
+   position: absolute;
+  }.container-img img{
+    max-width: 1500px
+  }.contact-info__input form{
+    width: 20rem;
   }
- } */
+}
