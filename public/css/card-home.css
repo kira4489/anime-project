@@ -1,0 +1,51 @@
+.card {
+    margin: 2rem auto;
+    width: 250px;
+    border: 1px solid grey;
+    padding-bottom: 1rem;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header__pill {
+    display: inline;
+    margin: .2rem;
+    padding: .3rem .6rem;
+    border-radius: 24px;
+    color: white;
+    background-color: orange;
+}
+
+.card-footer {
+    align-self: flex-end;
+}
+
+.card-footer__btn {
+    margin-top: 1.5rem;
+    background-color: #008487;
+    color: white;
+    padding: .5rem;
+    margin-right: .5rem;
+}
+
+.card-footer__link {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .card__img {
+        width: 100%;
+    }
+}
