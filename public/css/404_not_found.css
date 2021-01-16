@@ -30,7 +30,7 @@ body {
 }
 
 .section-main__info{
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .section-main__info h1 {
@@ -56,7 +56,7 @@ body {
  margin: auto;
  font-family: "paragraph";
  text-align: center;
- margin-top: 40px;
+ margin-top: 20px;
  font-size: 20px;
  width: fit-content;
  text-decoration: none;
