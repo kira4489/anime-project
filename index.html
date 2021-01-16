@@ -15,30 +15,31 @@
       src="https://kit.fontawesome.com/4faa9fe1ce.js"
       crossorigin="anonymous"
     ></script>
-  <!-- Slider-->
+
+    <!-- Slider-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <link rel="stylesheet" href="./public/css/swiper.css"/>
+
     <title>Anime-Full | Home</title>
 </head>
 
 <body>
     <!-- Header with search bar -->
     <header class="header">
-        
         <nav class="nav-bar">
             <div class="top-bar">
-                <a class="top-bar__brand" href="#">Anime-Full</a>
+              <a class="top-bar__brand" href="#">Anime-Full</a>
                 <form class="search-form">
                     <input class= "search-form__input" type="search" id="search-anime" name="q" placeholder="search anime">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <button class="search-form__btn" type="submit"><i class="search-icon fas fa-search"></i></button>
                 </form>
                 <span class="icon-menu" id="icon-menu">
                     <i class="fas fa-bars"></i>
                 </span>    
             </div>
-
+          
             <ul class="main-menu" id="main-menu">
                 <li class="main-menu__item"><a class= "main-menu__link" href="#">Home</a></li>
                 <li class="main-menu__item"><a class= "main-menu__link" href="./public/views/anime-top.html">Anime Top</a></li>
@@ -49,89 +50,90 @@
     <!---Header with search bar-->
 
 
- <!--Slider-->
- <div class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img class="swiper-slide__img" src="./public/assets/img/back1.jpg">
-    </div>
-    <div class="swiper-slide">
-      <img class="swiper-slide__img" src="./public/assets/img/back2.jpg">
-    </div>
-    <div class="swiper-slide">
-      <img class="swiper-slide__img" src="./public/assets/img/back3.jpg">
-    </div>
-  </div>
-  <!-- Add Arrows -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
- <!--Slider-->
- <main>
-  <div class="card">
-    <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
-    <div class="card-info">
-      <div class="card-header">
-        <h2 class="card-header__title">Anime title</h2>
-        <p class="card-header__pill">gender</p>
+  <!--Slider-->
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="swiper-slide__img" src="./public/assets/img/back1.jpg">
       </div>
-      <div class="card-footer">
-        <button class="card-footer__btn"><a class= "card-footer__link" href="./details.html">Read more >></a></button>
+      <div class="swiper-slide">
+        <img class="swiper-slide__img" src="./public/assets/img/back2.jpg">
+      </div>
+      <div class="swiper-slide">
+        <img class="swiper-slide__img" src="./public/assets/img/back3.jpg">
       </div>
     </div>
+  <!--Add Arrows-->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
+  <!--Slider-->
 
-  <div class="card">
-    <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
-    <div class="card-info">
-      <div class="card-header">
-        <h2 class="card-header__title">Anime title</h2>
-        <p class="card-header__pill">gender</p>
-      </div>
-      <div class="card-footer">
-        <button class="card-footer__btn"><a class= "card-footer__link" href="./details.html">Read more >></a></button>
+  <main>
+    <div class="card">
+      <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
+      <div class="card-info">
+        <div class="card-header">
+          <h2 class="card-header__title">Anime title</h2>
+          <p class="card-header__pill">gender</p>
+        </div>
+        <div class="card-footer">
+          <button class="card-footer__btn"><a class= "card-footer__link" href="/public/views/details.html">Read more >></a></button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="card">
-    <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
-    <div class="card-info">
-      <div class="card-header">
-        <h2 class="card-header__title">Anime title</h2>
-        <p class="card-header__pill">gender</p>
-      </div>
-      <div class="card-footer">
-        <button class="card-footer__btn"><a class= "card-footer__link" href="./details.html">Read more >></a></button>
+    <div class="card">
+      <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
+      <div class="card-info">
+        <div class="card-header">
+          <h2 class="card-header__title">Anime title</h2>
+          <p class="card-header__pill">gender</p>
+        </div>
+        <div class="card-footer">
+          <button class="card-footer__btn"><a class= "card-footer__link" href="/public/views/details.html">Read more >></a></button>
+        </div>
       </div>
     </div>
-  </div>
+
+    <div class="card">
+      <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
+      <div class="card-info">
+        <div class="card-header">
+          <h2 class="card-header__title">Anime title</h2>
+          <p class="card-header__pill">gender</p>
+        </div>
+        <div class="card-footer">
+          <button class="card-footer__btn"><a class= "card-footer__link" href="/public/views/details.html">Read more >></a></button>
+        </div>
+      </div>
+    </div>
 
 </main>
 
-    <!--Footer-->
-    <footer>
-      <section class="footer">
-        <div class="social-network">
-          <a href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-        <div class="social-network__copyright">
-          <p>Anime Full © 2021</p>
-        </div>
-      </section>
-    </footer>
-    <!--Footer-->
+  <!--Footer-->
+  <footer>
+    <section class="footer">
+      <div class="social-network">
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="social-network__copyright">
+        <p>Anime Full © 2021</p>
+      </div>
+    </section>
+  </footer>
+  <!--Footer-->
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./public/js/swiper.js"></script>
-    <script src="/public/js/navbar.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./public/js/swiper.js"></script>
+  <script src="/public/js/navbar.js"></script>
   </body>
 </html>
