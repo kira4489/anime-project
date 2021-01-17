@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "paragraph";
+  src: url("/public/assets/font/Antroposofia.ttf");
+}
+
+@font-face{
+  font-family: "title";
+  src: url("/public/assets/font/Boogaloo-Regular.ttf")
+}
+
+:root {
+  --contact-bg-color: #212f3d;
+  --contact-input-color: #008487;
+  --contact-colors: #ffffff;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--contact-bg-color);
+  height: auto;
+  width: 100%;
+}
+
+/* .container-img{
+  width: auto;
+  height: auto;
+}
+ */
+.contact-info__input {
+  
+ /*  margin-left: 2rem ; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.contact-info__input form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   width: 30rem; 
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--contact-input-color);
+}
+
+.contact-info__title {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "title";
+  color: var(--contact-colors);
+}
+/* 
+.container-mobile{
+  display: BL;
+} */
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-family: "paragraph";
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.message {
+  height: 100px;
+}
+
+.submit {
+  color: var(--contact-colors);
+  background: var(--contact-bg-color);
+  padding-top: 10px;
+ font-family: "paragraph";
+}
+
+.container-mobile__img {
+  max-width: 80%;
+}
+
+
+/* @media(max-width:900px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+} */
+@media(max-width:800px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .container-mobile__img {
+    display: block;
+    margin: auto;
+    
+  }  
+}
+
+@media(max-width:460px){
+  .container-mobile {
+    display: none;
+  }
+  /* body{
+    background-image: url("../assets/img/contact-info.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+  .contact-info__input{
+   /* position: absolute; */
+   background-image: url("/public/assets/img/contact-info.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   padding-bottom: 5rem;
+  }
+/*   .container-mobile img{
+    max-width: 40px;
+  } */
+  .contact-info__input form{
+    width: 20rem;
+  }
+}

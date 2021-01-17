@@ -50,7 +50,7 @@
 
 .icon-menu {
     font-size: 20px;
-    color: var(--header-color-text);
+    color: var(--hover-color-text);
 }
 /*--- top bar: brand and search bar --- */
 
