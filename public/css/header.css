@@ -6,7 +6,7 @@
 :root {
     --main-bg-color: #212f3d;
     --header-text-color: #FFFFFF;
-    --hover-text-color: #008487;
+    --hover-color-text: #FBB708;
 }  
 
 .header {
@@ -119,7 +119,7 @@
     }
 
     .main-menu__link:hover {
-        color: var(--gender-color-pill);
+        color: var(--hover-color-text);
     }
 
 }

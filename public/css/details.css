@@ -1,7 +1,16 @@
+@font-face {
+    font-family: "Boogaloo";
+    src: url("/public/assets/font/Boogaloo-Regular.ttf");
+}
+
+
 .anime-section {
     margin: 2rem;
 }
 
+.anime-title {
+    font-family: 'Boogaloo';
+}
 
 .anime__img {
     display: block;
