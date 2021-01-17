@@ -5,9 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/css/normalize.css" />
     <link rel="stylesheet" href="/public/css/contact.css" />
+    <link rel="stylesheet" href="/public/css/header.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
     <title>Contact</title>
   </head>
   <body>
+      <!-- Header with search bar -->
+      <header class="header">
+        <nav class="nav-bar">
+            <div class="top-bar">
+              <a class="top-bar__brand" href="#">Anime-Full</a>
+                <form class="search-form">
+                    <input class= "search-form__input" type="search" id="search-anime" name="q" placeholder="search anime">
+                    <button class="search-form__btn" type="submit"><i class="search-icon fas fa-search"></i></button>
+                </form>
+                <span class="icon-menu" id="icon-menu">
+                    <i class="fas fa-bars"></i>
+                </span>    
+            </div>
+          
+            <ul class="main-menu" id="main-menu">
+                <li class="main-menu__item"><a class= "main-menu__link" href="#">Home</a></li>
+                <li class="main-menu__item"><a class= "main-menu__link" href="./public/views/anime-top.html">Anime Top</a></li>
+                <li class="main-menu__item"><a class= "main-menu__link" href="./public/views/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!---Header with search bar-->
+
       <div class="container">
         <div class="container-img">
           <img src="../assets/img/contact.jpg" />
@@ -28,5 +53,27 @@
           </form>
         </div>
       </div>
+
+      
+  <!--Footer-->
+  <footer>
+    <section class="footer">
+      <div class="social-network">
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="social-network__copyright">
+        <p>Anime Full © 2021</p>
+      </div>
+    </section>
+  </footer>
+  <!--Footer-->
   </body>
 </html>
