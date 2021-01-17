@@ -27,6 +27,7 @@
     font-family: "brand", cursive;
     font-size: 1.5rem;
     font-weight: bold;
+    letter-spacing: 1px;
     color: var(--header-text-color);
 }
 
@@ -141,10 +142,6 @@
 
     .search-form__input:focus {
         outline: none;
-    }
-
-    .main-menu__link {
-        font-size: 1.8rem;
     }
 }
 
