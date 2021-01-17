@@ -3,6 +3,11 @@
     src: url("/public/assets/font/Boogaloo-Regular.ttf");
 }
 
+:root {
+    --gender-color-pill: #FBB708;
+    --season-color-pill: #FB431B;
+}
+
 .top-section {
     margin: 2rem;
 }
@@ -27,31 +32,35 @@
 .anime-pills {
     display: flex;
     justify-content: flex-end;
-    margin-top: .5rem;
+    margin-top: 2rem;
 }
 
-.anime__pill--blue,
-.anime__pill--orange,
-.anime__pill--red {  
+.anime__pill--gender,
+.anime__pill--season {  
     display: inline;
-    margin: .2rem;
-    padding: .3rem .6rem;
     border-radius: 24px;
-    color: white;
+    margin-right: .5rem;
+    padding: .2rem .8rem;
+    width: auto;
+    color: var(--header-text-color);
+    font-family: 'Boogaloo';
 }
 
-.anime__pill--blue {
-    background-color: blue;
+.anime__pill--gender {
+    background-color: var(--gender-color-pill);
 }
 
-.anime__pill--orange {
-    background-color: orange;
+.anime__pill--season {
+    background-color: var(--season-color-pill);
 }
 
-.anime__pill--red {
-    background-color: red;
-}
 
 .anime__details {
     text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .top-section__title {
+        font-size: 2rem;
+    }   
 }
