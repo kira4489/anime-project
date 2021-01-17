@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="/public/css/contact.css" />
     <link rel="stylesheet" href="/public/css/header.css">
     <link rel="stylesheet" href="/public/css/footer.css">
+
+
+    <!-- icons -->
+    <script
+    src="https://kit.fontawesome.com/4faa9fe1ce.js"
+    crossorigin="anonymous"
+  ></script>
+
     <title>Contact</title>
   </head>
   <body>
@@ -25,38 +33,39 @@
             </div>
           
             <ul class="main-menu" id="main-menu">
-                <li class="main-menu__item"><a class= "main-menu__link" href="#">Home</a></li>
+                <li class="main-menu__item"><a class= "main-menu__link" href="/index.html">Home</a></li>
                 <li class="main-menu__item"><a class= "main-menu__link" href="./public/views/anime-top.html">Anime Top</a></li>
-                <li class="main-menu__item"><a class= "main-menu__link" href="./public/views/contact.html">Contact</a></li>
+                <li class="main-menu__item"><a class= "main-menu__link" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
     <!---Header with search bar-->
 
       <div class="container">
-        <div class="container-img">
+      <!--   <div class="container-img">
           <img src="../assets/img/contact.jpg" />
         </div>
-        <div class="container-mobile">
-          <img src="../assets/img/contact-mobile.jpg">
-        </div>
+ -->
+         <div class="container-mobile">
+          <img class="container-mobile__img" src="/public/assets/img/contact-info.jpg">
+        </div> 
+
           <div class="contact-info__input">
             <h1 class="contact-info__title">Contact Us</h1>
-          <form>
-            <input type="text" class="name" placeholder="Name" />
-            <input type="text" class="email" placeholder="Email" />
-            <textarea
-              class="message"
-              placeholder="Message"
-            ></textarea>
-            <button class="submit">Submit</button>
-          </form>
-        </div>
+            <form>
+              <input type="text" class="name" placeholder="Name" />
+              <input type="text" class="email" placeholder="Email" />
+              <textarea
+                class="message"
+                placeholder="Message"
+              ></textarea>
+              <button class="submit">Submit</button>
+            </form>
+          </div>
       </div>
-
       
   <!--Footer-->
-  <footer>
+   <footer>
     <section class="footer">
       <div class="social-network">
         <a href="#">
@@ -74,6 +83,8 @@
       </div>
     </section>
   </footer>
-  <!--Footer-->
+   <!--Footer-->
+
+   <script src="/public/js/navbar.js"></script>
   </body>
 </html>
