@@ -6,10 +6,10 @@
 :root {
     --main-bg-color: #212f3d;
     --header-text-color: #FFFFFF;
-    --hover-text-color: #008487;
+    --hover-text-color: #FBB708;
     --gender-color-pill: #FBB708;
     --season-color-pill: #FB431B;
-    --top-color-pill-: #1BAAFB;
+    --top-color-pill: #1BAAFB;
     --btn-bg-color: #008487;
 }
 
