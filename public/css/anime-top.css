@@ -1,57 +1,90 @@
 @font-face {
-    font-family: "title-top";
+    font-family: "Boogaloo";
     src: url("/public/assets/font/Boogaloo-Regular.ttf");
+}
+
+:root {
+    --gender-color-pill: #FBB708;
+    --season-color-pill: #FB431B;
 }
 
 .top-section {
     margin: 2rem;
+    background-color: rgb(230, 227, 227);
+    padding: .5rem;
+    padding-bottom: 3rem;
 }
 
-.top-section__title {
+.title-top {
     text-align: center;
     font-family: 'title-top', cursive;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .anime-header {
     display: flex;
-    margin: 1rem;
+}
+
+.anime-header__number {
+    font-size: 2rem;
 }
 
 .anime-header__title {
     margin-left: 1rem;
-    font-family: 'title-top', cursive;
-    font-size: 2rem;
-    letter-spacing: 3px;
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.5rem;
 }
+
+.anime__img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+}
+
 .anime-pills {
     display: flex;
     justify-content: flex-end;
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 
-.anime__pill--blue,
-.anime__pill--orange,
-.anime__pill--red {  
+.anime__pill--gender,
+.anime__pill--season {  
     display: inline;
-    margin: .2rem;
-    padding: .3rem .6rem;
     border-radius: 24px;
-    color: white;
+    margin-right: .5rem;
+    padding: .2rem .8rem;
+    width: auto;
+    color: var(--header-text-color);
+    font-family: 'Boogaloo';
 }
 
-.anime__pill--blue {
-    background-color: blue;
+.anime__pill--gender {
+    background-color: var(--gender-color-pill);
 }
 
-.anime__pill--orange {
-    background-color: orange;
-}
-
-.anime__pill--red {
-    background-color: red;
+.anime__pill--season {
+    background-color: var(--season-color-pill);
 }
 
 .anime__details {
     text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .title-top {
+        font-size: 2rem;
+    }   
+
+    .top-section {
+        display: flex;
+    }
+
+    .top-left {
+        width: 50%;
+    }
+
+    .top-right {
+        width: 50%;
+    }
 }
