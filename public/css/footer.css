@@ -28,6 +28,9 @@
   margin: 0.625rem;
   text-decoration: none;
   color: var(--main-social-network);
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #eb196e;
 }
 
 .social-network i {
