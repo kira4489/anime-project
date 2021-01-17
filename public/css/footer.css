@@ -43,4 +43,9 @@
   font-family: 'Boogaloo';
 }
 
+.fab, .far {
+  font-weight: 400;
+  padding: 5px;
+}
+
 /* Footer */
