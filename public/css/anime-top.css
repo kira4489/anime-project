@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "title-top";
+    font-family: "Boogaloo";
     src: url("/public/assets/font/Boogaloo-Regular.ttf");
 }
 
@@ -10,29 +10,42 @@
 
 .top-section {
     margin: 2rem;
+    background-color: rgb(230, 227, 227);
+    padding: .5rem;
+    padding-bottom: 3rem;
 }
 
-.top-section__title {
+.title-top {
     text-align: center;
     font-family: 'title-top', cursive;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .anime-header {
     display: flex;
-    margin: 1rem;
+}
+
+.anime-header__number {
+    font-size: 2rem;
 }
 
 .anime-header__title {
     margin-left: 1rem;
-    font-family: 'title-top', cursive;
-    font-size: 2rem;
-    letter-spacing: 3px;
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.5rem;
 }
+
+.anime__img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+}
+
 .anime-pills {
     display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .anime__pill--gender,
@@ -54,13 +67,24 @@
     background-color: var(--season-color-pill);
 }
 
-
 .anime__details {
     text-align: left;
 }
 
 @media screen and (min-width: 768px) {
-    .top-section__title {
+    .title-top {
         font-size: 2rem;
     }   
+
+    .top-section {
+        display: flex;
+    }
+
+    .top-left {
+        width: 50%;
+    }
+
+    .top-right {
+        width: 50%;
+    }
 }
