@@ -3,6 +3,11 @@
     src: url("/public/assets/font/December\ Holidays.ttf");
 }
 
+@font-face {
+    font-family: "Boogaloo";
+    src: url("/public/assets/font/Boogaloo-Regular.ttf");
+}
+
 :root {
     --main-bg-color: #212f3d;
     --header-text-color: #FFFFFF;
