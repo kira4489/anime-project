@@ -12,7 +12,7 @@
 .header {
     background-color: var(--main-bg-color);
     color: var(--header-text-color);
-    padding: 1rem 1rem;  
+    padding: .8rem 1rem;  
 }
 
 /*--- top bar: brand and search bar --- */
@@ -45,7 +45,11 @@
 
 .search-form__btn {
     border: none;
-    background-color: transparent;
+    background-color: var(--header-text-color);
+}
+
+.icon-menu {
+    font-size: 20px;
 }
 /*--- top bar: brand and search bar --- */
 
@@ -60,11 +64,13 @@
     text-decoration: none;
     color: var(--header-text-color);
     font-family: 'Boogaloo';
+    font-size: 1.5rem;
 }
 
 .main-menu__item {
     margin: 2rem auto;
     text-align: center;
+    border-bottom: .5px solid #58595a;
 }
 
 .show {
@@ -102,6 +108,10 @@
         margin-bottom: 0;
     }
 
+    .main-menu__item {
+        border-bottom: none;
+    }
+
     .main-menu__link {
         color: var(--header-text-color);
         margin: 1rem;
@@ -109,7 +119,7 @@
     }
 
     .main-menu__link:hover {
-        color: var(--orange-color-pill);
+        color: var(--gender-color-pill);
     }
 
 }
