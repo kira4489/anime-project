@@ -6,7 +6,7 @@
 :root {
     --main-bg-color: #212f3d;
     --header-text-color: #FFFFFF;
-    --hover-color-text: #FBB708;
+    --hover-color-text: #eb196e;
 }  
 
 .header {
@@ -26,9 +26,8 @@
     text-decoration: none;
     font-family: "brand", cursive;
     font-size: 1.5rem;
-    font-weight: bold;
     letter-spacing: 1px;
-    color: var(--header-text-color);
+    color: var(--hover-color-text);
 }
 
 .search-form {
@@ -51,6 +50,7 @@
 
 .icon-menu {
     font-size: 20px;
+    color: var(--hover-color-text);
 }
 /*--- top bar: brand and search bar --- */
 
@@ -71,7 +71,8 @@
 .main-menu__item {
     margin: 2rem auto;
     text-align: center;
-    border-bottom: .5px solid #58595a;
+    border-bottom: .5px solid var(--hover-color-text);
+    border-left: .5px solid var(--hover-color-text);;
 }
 
 .show {
@@ -111,6 +112,7 @@
 
     .main-menu__item {
         border-bottom: none;
+        border-left: none;      
     }
 
     .main-menu__link {
