@@ -6,7 +6,7 @@
 :root {
     --main-bg-color: #212f3d;
     --header-text-color: #FFFFFF;
-    --hover-text-color: #008487;
+    --hover-color-text: #FBB708;
 }  
 
 .header {
@@ -46,7 +46,7 @@
 
 .search-form__btn {
     border: none;
-    background-color: white;
+    background-color: var(--header-text-color);
 }
 
 .icon-menu {
@@ -120,7 +120,7 @@
     }
 
     .main-menu__link:hover {
-        color: var(--orange-color-pill);
+        color: var(--hover-color-text);
     }
 
 }
