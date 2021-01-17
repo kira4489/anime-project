@@ -9,16 +9,17 @@
 }
 
 .top-section {
-    margin: 2rem;
-    background-color: rgb(230, 227, 227);
-    padding: .5rem;
-    padding-bottom: 3rem;
+    margin: 2rem 1rem 4rem 1rem;
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .title-top {
     text-align: center;
-    font-family: 'title-top', cursive;
+    font-family: 'Boogaloo', cursive;
     font-size: 1.5rem;
+    margin: 4rem;
 }
 
 .anime-header {
@@ -30,22 +31,23 @@
 }
 
 .anime-header__title {
-    margin-left: 1rem;
     font-family: 'Boogaloo', cursive;
     font-size: 1.5rem;
+    padding: 1rem;
 }
 
 .anime__img {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 300px;
+    padding: 0 1.5rem;
+    width: 100%;
 }
 
 .anime-pills {
     display: flex;
     justify-content: flex-end;
-    margin-top: 1rem;
+    padding-right: 1rem;
 }
 
 .anime__pill--gender,
@@ -69,6 +71,8 @@
 
 .anime__details {
     text-align: left;
+    padding: .5rem 1.5rem;
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -78,6 +82,9 @@
 
     .top-section {
         display: flex;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        padding: 1rem 2rem 2rem 2rem;
     }
 
     .top-left {
@@ -85,6 +92,30 @@
     }
 
     .top-right {
-        width: 50%;
+        width: 95%;
+        padding-top: 2rem;
+    }
+
+    .anime-pills {
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+
+    .anime__img {
+        margin: auto;
+        padding-top: 1rem;
+        width: 100%;
+    }
+    
+    .anime-details {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .top-section {
+        margin-bottom: 4rem;
+        margin-left: 8rem;
+        margin-right: 8rem;
     }
 }
