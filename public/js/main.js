@@ -19,7 +19,7 @@ function traer() {
      <div class="card__body">
          <div class="card__header">
              <h2 class="card__title">${item.title}</h2>
-             <p class="card__pill">${item.source}</p>
+             <p class="card__pill">${item.type}</p>
          </div>
          <div class="card__footer">
              <button class="card__btn"><a class= "card__link" href="/public/views/details.html?id=${item.mal_id}">Read more >></a></button>
