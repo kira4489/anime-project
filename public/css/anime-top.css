@@ -50,8 +50,8 @@
     padding-right: 1rem;
 }
 
-.anime-pill__pill--gender,
-.anime-pill__pill--season {  
+.anime-pill__pill,
+.anime-pill__pill {  
     display: inline;
     border-radius: 24px;
     margin-right: .5rem;
@@ -69,7 +69,7 @@
     background-color: var(--season-color-pill);
 }
 
-.anime-pill__details {
+.ranking__details {
     text-align: left;
     padding: .5rem 1.5rem;
     

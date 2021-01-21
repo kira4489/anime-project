@@ -30,15 +30,15 @@
     width: 300px;
 }
 
-.anime__pill {
+.anime-pill {
     display: flex;
     justify-content: flex-end;
     margin-top: 2rem;
 }
 
-.anime__pill--top,
-.anime__pill--gender,
-.anime__pill--season {  
+.anime-pill__pill,
+.anime-pill__pill,
+.anime-pill__pill {
     display: inline;
     border-radius: 24px;
     margin-top: 1rem;
@@ -49,15 +49,15 @@
     font-family: 'Boogaloo';
 }
 
-.anime__pill--top {
+.anime-pill__pill--top {
     background-color: var(--top-color-pill);
 }
 
-.anime__pill--gender {
+.anime-pill__pill--gender {
     background-color: var(--gender-color-pill);
 }
 
-.anime__pill--season {
+.anime-pill__pill--season {
     background-color: var(--season-color-pill);
 }
 
