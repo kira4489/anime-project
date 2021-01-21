@@ -29,9 +29,9 @@ async function lorem() {
         </div>
         <div class="anime__info">
           <div class="anime-pill">
-              <p class="anime-pill__pill anime-pill__pill--top">top</p>
-              <p class="anime-pill__pill anime-pill__pill--gender">gender</p>
-              <p class="anime-pill__pill anime-pill__pill--season">season</p>
+              <p class="anime-pill__pill anime-pill__pill--top">${response.rank}</p>
+              <p class="anime-pill__pill anime-pill__pill--gender">${response.type}</p>
+              <p class="anime-pill__pill anime-pill__pill--season">${response.rating}</p>
 
           </div>
           <p class="anime__details">${response.synopsis}</p>
