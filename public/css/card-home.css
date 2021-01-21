@@ -13,32 +13,45 @@
     --btn-bg-color: #008487;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem auto;
+}
+
 .card {
-    margin: 4rem auto;
-    padding-bottom: 1rem;
-    width: 150px;
+    margin: 2rem 2rem;
+    padding-bottom: 1.5rem;
+    width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
 }
 
-.card-info {
+.card__figure {
+    margin: 0;
+}
+
+.card__img{
+    width: 100%;
+    height: 350px;
+}
+
+.card__body {
     display: flex;
     flex-direction: column;
 }
 
-.card-header {
-    padding: 0 1rem; 
-}
-
-.card-header__title {
+.card__title {
     text-align: left;
     font-family: 'Boogaloo';
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: .5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    padding: .5rem .5rem .5rem 1rem;
 }
 
-.card-header__pill {
+.card__pill {
     display: inline;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -46,15 +59,15 @@
     width: auto;
     border-radius: 24px;
     color: var(--header-text-color);
-    background-color: var(--gender-color-pill);
+    background-color: var(--season-color-pill);
     font-family: 'Boogaloo';
 }
 
-.card-footer {
-    align-self: flex-end;
+.card__footer {
+    text-align: right;
 }
 
-.card-footer__btn {
+.card__btn {
     margin-top: 1.5rem;
     margin-right: 1rem;  
     padding: .3rem .6rem;
@@ -65,34 +78,33 @@
     box-shadow: none;
 }
 
-.card-footer__link {
+.card__link {
     color: var(--header-text-color);
     text-decoration: none;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card__img{
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-}
 
 @media screen and (min-width: 768px) {   
+    .card-container {
+        margin-left: 3rem;
+        margin-right: 3rem; 
+    }
+
     .card {
         width: 300px;
-        margin: 5rem;
     }
 
-    .card__img {
-        width: 100%;
+    .card__title {
+        font-size: 2.5rem;
     }
+}
 
-    .card-header__title {
-        font-size: 1.5rem;
+@media screen and (min-width: 992px) {
+    .card-container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .card__title {
+        font-size: 2rem;
     }
 }

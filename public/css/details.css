@@ -16,7 +16,7 @@
 }
 
 .anime {
-    margin: 2rem 2.5rem;
+    margin: 4rem 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -25,20 +25,16 @@
 }
 
 .anime__img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 300px;
+    width: 100%;
 }
 
 .anime-pill {
     display: flex;
     justify-content: flex-end;
     margin-top: 2rem;
+    padding-right: 1.5rem;
 }
 
-.anime-pill__pill,
-.anime-pill__pill,
 .anime-pill__pill {
     display: inline;
     border-radius: 24px;
@@ -64,6 +60,8 @@
 
 .anime__details {
     text-align: left;
+    padding: 1.5rem;
+    padding-bottom: 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -80,6 +78,9 @@
     .anime__info {
         width: 50%;
         margin-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .anime__img {
@@ -88,7 +89,7 @@
 }
 
 @media screen and (min-width: 992px) {
-    .anime__mg {
+    .anime__img {
         margin-top: 3rem;
     }
 }

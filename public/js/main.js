@@ -13,14 +13,16 @@ function traer() {
         }
         contenido.innerHTML += `
      <div class="card">
-     <img class="card__img" src=${item.image_url}>
-     <div class="card-info">
-         <div class="card-header">
-             <h2 class="card-header__title">${item.title}</h2>
-             <p class="card-header__pill">${item.type}</p>
+        <figure class= "card__figure">
+            <img class="card__img" src=${item.image_url}>
+        </figure>    
+     <div class="card__body">
+         <div class="card__header">
+             <h2 class="card__title">${item.title}</h2>
+             <p class="card__pill">${item.source}</p>
          </div>
-         <div class="card-footer">
-             <button class="card-footer__btn"><a class= "card-footer__link" href="/public/views/details.html?id=${item.mal_id}">Read more >></a></button>
+         <div class="card__footer">
+             <button class="card__btn"><a class= "card__link" href="/public/views/details.html?id=${item.mal_id}">Read more >></a></button>
          </div>
          </div>
          </div>
