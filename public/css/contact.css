@@ -97,12 +97,14 @@ textarea {
    background-size: cover;
    min-height: 100%;
    width: 100%;
-   margin-bottom: 2rem;
-   padding-bottom: 5rem;
+   /* margin-bottom: 2rem; */
+   padding-bottom: 14rem;
   }
   .contact-info__input form{
-    width: 10rem;
+    width: 60%;
     display: block;
     margin: auto;
+  }.contact-info__title{
+    margin-top: 8rem;
   }
 }
