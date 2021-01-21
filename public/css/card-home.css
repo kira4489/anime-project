@@ -13,42 +13,35 @@
     --btn-bg-color: #008487;
 }
 
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .card {
     margin: 4rem auto;
     padding-bottom: 1rem;
-    width: 250px;
+    width: 150px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
 }
 
-.card__figure {
-    margin: 0;
+.card-info {
+    display: flex;
+    flex-direction: column;
 }
 
-.card__img {
-    width: 100%;
+.card-header {
+    padding: 0 1rem; 
 }
 
-.card__body {
-    padding-left: 1rem;
-}
-
-.card__title {
+.card-header__title {
+    text-align: left;
     font-family: 'Boogaloo';
     font-size: 2.5rem;
     margin-top: .5rem;
     margin-bottom: 1rem;
 }
 
-.card__pill {
+.card-header__pill {
     display: inline;
     margin-top: 1rem;
+    margin-left: 1rem;
     padding: .2rem .8rem;
     width: auto;
     border-radius: 24px;
@@ -57,11 +50,11 @@
     font-family: 'Boogaloo';
 }
 
-.card__footer {
-    text-align: right;
+.card-footer {
+    align-self: flex-end;
 }
 
-.card__btn {
+.card-footer__btn {
     margin-top: 1.5rem;
     margin-right: 1rem;  
     padding: .3rem .6rem;
@@ -72,20 +65,34 @@
     box-shadow: none;
 }
 
-.card__link {
+.card-footer__link {
     color: var(--header-text-color);
     text-decoration: none;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-@media screen and (min-width: 768px) {
-    
+.card__img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
 
+@media screen and (min-width: 768px) {   
     .card {
         width: 300px;
+        margin: 4rem;
     }
 
-    .card__title {
+    .card__img {
+        width: 100%;
+    }
+
+    .card-header__title {
         font-size: 1.5rem;
     }
 }

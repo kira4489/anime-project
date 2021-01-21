@@ -17,6 +17,7 @@
 
 .anime {
     margin: 2rem 2.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .anime__figure {
@@ -82,7 +83,7 @@
     }
 
     .anime__img {
-        margin-top: 5rem;
+        margin-bottom: 2rem;
     }
 }
 
