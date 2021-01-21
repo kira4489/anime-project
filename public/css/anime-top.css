@@ -8,7 +8,7 @@
     --season-color-pill: #FB431B;
 }
 
-.top-section {
+.ranking {
     margin: 2rem 1rem 4rem 1rem;
     padding: 1rem;
     padding-bottom: 2.5rem;
@@ -22,21 +22,21 @@
     margin: 4rem;
 }
 
-.anime-header {
+.ranking__header {
     display: flex;
 }
 
-.anime-header__number {
+.ranking__number {
     font-size: 2rem;
 }
 
-.anime-header__title {
+.ranking__title {
     font-family: 'Boogaloo', cursive;
     font-size: 1.5rem;
     padding: 1rem;
 }
 
-.anime__img {
+.ranking__img {
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -44,14 +44,14 @@
     width: 100%;
 }
 
-.anime-pills {
+.anime-pill {
     display: flex;
     justify-content: flex-end;
     padding-right: 1rem;
 }
 
-.anime__pill--gender,
-.anime__pill--season {  
+.anime-pill__pill,
+.anime-pill__pill {  
     display: inline;
     border-radius: 24px;
     margin-right: .5rem;
@@ -61,15 +61,15 @@
     font-family: 'Boogaloo';
 }
 
-.anime__pill--gender {
+.anime-pill__pill--gender {
     background-color: var(--gender-color-pill);
 }
 
-.anime__pill--season {
+.anime-pill__pill--season {
     background-color: var(--season-color-pill);
 }
 
-.anime__details {
+.ranking__details {
     text-align: left;
     padding: .5rem 1.5rem;
     
@@ -80,41 +80,41 @@
         font-size: 2rem;
     }   
 
-    .top-section {
+    .ranking {
         display: flex;
         margin-right: 3rem;
         margin-left: 3rem;
         padding: 1rem 2rem 2rem 2rem;
     }
 
-    .top-left {
+    .ranking__left {
         width: 50%;
     }
 
-    .top-right {
+    .ranking__right {
         width: 95%;
         padding-top: 2rem;
     }
 
-    .anime-pills {
+    .anime-pill {
         justify-content: flex-end;
         margin-top: 0;
     }
 
-    .anime__img {
+    .ranking__img {
         margin: auto;
         padding-top: 1rem;
         width: 100%;
     }
     
-    .anime-details {
+    .ranking {
         padding-top: 0 3rem .5rem 3rem;
 
     }
 }
 
 @media screen and (min-width: 992px) {
-    .top-section {
+    .ranking {
         margin-bottom: 4rem;
         margin-left: 10rem;
         margin-right: 10rem;

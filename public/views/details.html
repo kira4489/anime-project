@@ -21,14 +21,14 @@
     <!-- Header with search bar -->
     <header class="header">
         
-        <nav class="nav-bar">
+        <nav class="nav">
             <div class="top-bar">
                 <a class="top-bar__brand" href="/index.html">Anime-Full</a>
-                <form class="search-form">
-                    <input class= "search-form__input" type="search" id="search-anime" name="q" placeholder="search anime">
-                    <button class="search-form__btn" type="submit"><i class="fa fa-search"></i></button>
+                <form class="top-bar__form">
+                    <input class= "top-bar__input" type="search" id="search-anime" name="q" placeholder="search anime">
+                    <button class="top-bar__btn" type="submit"><i class="fas fa-search"></i></button>
                 </form>
-                <span class="icon-menu" id="icon-menu">
+                <span class="top-bar__icon" id="icon-menu">
                     <i class="fas fa-bars"></i>
                 </span>    
             </div>
@@ -43,21 +43,26 @@
     <!---Header with search bar-->
 
     <main>
-      <h1 class="anime__title">Anime Title</h1>
-        <div class="anime-section">
-          <div class="anime">
-            <img class="anime__img" src="/public/assets/img/anime.jpg" alt="anime image">
-          </div>
+      <h1 class="title">Anime Title</h1>
 
-          <div class="anime-info">
-            <div class="anime-pills">
-                <p class="anime__pill--top">top</p>
-                <p class="anime__pill--gender">gender</p>
-                <p class="anime__pill--season">season</p>
-            </div>
-            <p class="anime__details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad id soluta et quo quos vel, eligendi, dicta ex ea, nobis sequi. Tempora sequi vero dolorem minima ipsum expedita numquam optio quidem! Similique pariatur reiciendis quas quia provident minus nisi quam! Eveniet ut hic exercitationem maxime similique accusantium libero accusamus autem, sit nesciunt odio veritatis consequatur blanditiis fugiat recusandae modi facere sequi fugit, minus unde iusto tempore aspernatur. Corrupti repellendus ut laborum, atque quaerat vero inventore soluta veritatis dolore</p>
-          </div>
+      <div class="anime">
+        <div class="anime__illustration">
+          <figure class="anime__figure">
+            <img class="anime__img" src="/public/assets/img/anime.jpg" alt="anime image">
+          </figure>
         </div>
+
+
+        <div class="anime__info">
+          <div class="anime-pill">
+              <p class="anime-pill__pill anime-pill__pill--top">top</p>
+              <p class="anime-pill__pill anime-pill__pill--gender">gender</p>
+              <p class="anime-pill__pill anime-pill__pill--season">season</p>
+
+          </div>
+          <p class="anime__details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad id soluta et quo quos vel, eligendi, dicta ex ea, nobis sequi. Tempora sequi vero dolorem minima ipsum expedita numquam optio quidem! Similique pariatur reiciendis quas quia provident minus nisi quam! Eveniet ut hic exercitationem maxime similique accusantium libero accusamus autem, sit nesciunt odio veritatis consequatur blanditiis fugiat recusandae modi facere sequi fugit, minus unde iusto tempore aspernatur. Corrupti repellendus ut laborum, atque quaerat vero inventore soluta veritatis dolores mollitia earum nostrum doloremque dicta eveniet magni blanditiis porro iusto exercitationem nisi aliquid. Ipsa quia blanditiis quos necessitatibus sequi nam eaque mollitia.</p>
+        </div>
+      </div>
     </main>
 
     <!--Footer-->

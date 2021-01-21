@@ -28,14 +28,14 @@
 <body>
     <!-- Header with search bar -->
     <header class="header">
-        <nav class="nav-bar">
+        <nav class="nav">
             <div class="top-bar">
               <a class="top-bar__brand" href="#">Anime-Full</a>
-                <form class="search-form">
-                    <input class= "search-form__input" type="search" id="search-anime" name="q" placeholder="search anime">
-                    <button class="search-form__btn" type="submit"><i class="search-icon fas fa-search"></i></button>
+                <form class="top-bar__form">
+                    <input class= "top-bar__input" type="search" id="search-anime" name="q" placeholder="search anime">
+                    <button class="top-bar__btn" type="submit"><i class="fas fa-search"></i></button>
                 </form>
-                <span class="icon-menu" id="icon-menu">
+                <span class="top-bar__icon" id="icon-menu">
                     <i class="fas fa-bars"></i>
                 </span>    
             </div>
@@ -69,46 +69,57 @@
   </div>
   <!--Slider-->
 
-  <main class="main">
-    <div class="card">
-      <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
-      <div class="card-info">
-        <div class="card-header">
-          <h2 class="card-header__title">Anime title</h2>
-          <p class="card-header__pill">gender</p>
+  <main>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="card__header">
+          <figure class="card__figure">
+            <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
+          </figure>
         </div>
-        <div class="card-footer">
-          <button class="card-footer__btn"><a class= "card-footer__link" href="/public/views/details.html">Read more >></a></button>
+        <div class="card__body">  
+          <h2 class="card__title">Anime title</h2>
+          <p class="card__pill">gender</p>
+        </div>
+
+          <div class="card__footer">
+            <button class="card__btn"><a class= "card__link" href="/public/views/details.html">Read more >></a></button>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="card__header">
+          <figure class="card__figure">
+            <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
+          </figure>
+        </div>
+        <div class="card__body">  
+          <h2 class="card__title">Anime title</h2>
+          <p class="card__pill">gender</p>
+        </div>
+
+        <div class="card__footer">
+          <button class="card__btn"><a class= "card__link" href="/public/views/details.html">Read more >></a></button>
+        </div>
+      </div>    
+
+      <div class="card">
+        <div class="card__header">
+          <figure class="card__figure">
+            <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
+          </figure>
+        </div>
+        <div class="card__body">  
+          <h2 class="card__title">Anime title</h2>
+          <p class="card__pill">gender</p>
+        </div>
+        <div class="card__footer">
+          <button class="card__btn"><a class= "card__link" href="/public/views/details.html">Read more >></a></button>
         </div>
       </div>
+    
     </div>
-
-    <div class="card">
-      <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
-      <div class="card-info">
-        <div class="card-header">
-          <h2 class="card-header__title">Anime title</h2>
-          <p class="card-header__pill">gender</p>
-        </div>
-        <div class="card-footer">
-          <button class="card-footer__btn"><a class= "card-footer__link" href="/public/views/details.html">Read more >></a></button>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img class="card__img" src="/public/assets/img/anime.jpg" alt= "anime image">
-      <div class="card-info">
-        <div class="card-header">
-          <h2 class="card-header__title">Anime title</h2>
-          <p class="card-header__pill">gender</p>
-        </div>
-        <div class="card-footer">
-          <button class="card-footer__btn"><a class= "card-footer__link" href="/public/views/details.html">Read more >></a></button>
-        </div>
-      </div>
-    </div>
-
 </main>
 
   <!--Footer-->
