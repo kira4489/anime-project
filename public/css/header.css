@@ -18,6 +18,9 @@
     background-color: var(--main-bg-color);
     color: var(--header-text-color);
     padding: .8rem 1rem;  
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 /*--- top bar: brand and search bar --- */
