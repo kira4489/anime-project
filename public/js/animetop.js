@@ -7,7 +7,7 @@ function Numberten() {
   }
   
  async function Numberesponse() {
-  let red = await jim();
+  let red = await Numberten();
   console.log(red.anime);
   red.anime.map((item, index) => {
     if (index > 20 && index < 30) {
