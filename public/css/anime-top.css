@@ -40,8 +40,8 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 1.5rem;
-    width: 100%;
+    /* padding: 0 1.5rem; */
+    /* width: 100%; */
 }
 
 .anime-pill {
@@ -102,7 +102,7 @@
 
     .ranking__img {
         margin: auto;
-        padding-top: 1rem;
+        /* padding-top: 1rem; */
         width: 100%;
     }
     
