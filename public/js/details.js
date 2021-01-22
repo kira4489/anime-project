@@ -9,14 +9,14 @@ console.log(id); // '?q=pisos+en+barcelona&ciudad=Barcelona'
 const params = new URLSearchParams(window.location.search);
 console.log(params);
 
-function text() {
+function Params() {
   return fetch(`https://api.jikan.moe/v3/anime/${id}`)
     .then((response) => response.json())
     .catch((error) => console.log(error.message));
 }
 
-async function lorem() {
-  let response = await text();
+async function ParamsId() {
+  let response = await Params();
   console.log(response);
 
   details.innerHTML = `
@@ -40,4 +40,4 @@ async function lorem() {
   `;
 }
 
-lorem();
+ParamsId();

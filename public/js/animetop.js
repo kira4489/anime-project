@@ -1,12 +1,12 @@
 let ran = document.getElementById("ran");
 
-function jim() {
+function Numberten() {
     return fetch("https://api.jikan.moe/v3/genre/anime/2/1")
       .then((response) => response.json())
       .catch((error) => console.log(error.message));
   }
   
- async function jam() {
+ async function Numberesponse() {
   let red = await jim();
   console.log(red.anime);
   red.anime.map((item, index) => {
@@ -36,4 +36,4 @@ function jim() {
   });
 }
 
-jam();
+Numberesponse();

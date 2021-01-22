@@ -1,17 +1,17 @@
-let contenido = document.getElementById("contenido");
+let content= document.getElementById("content");
 
-function traer() {
+function Bring() {
   fetch("https://api.jikan.moe/v3/genre/anime/2/1", {
     method: "get",
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log(data)
+      console.log(data);
       data.anime.map((item, index) => {
         if (index > 8) {
           return;
         }
-        contenido.innerHTML += `
+        content.innerHTML += `
      <div class="card">
         <figure class= "card__figure">
             <img class="card__img" src=${item.image_url}>
@@ -31,4 +31,4 @@ function traer() {
     });
 }
 
-traer();
+Bring();
