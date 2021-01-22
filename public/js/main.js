@@ -6,8 +6,8 @@ function traer() {
   })
     .then((res) => res.json())
     .then((data) => {
+      console.log(data)
       data.anime.map((item, index) => {
-        //  console.log(item)
         if (index > 8) {
           return;
         }
@@ -19,7 +19,7 @@ function traer() {
      <div class="card__body">
          <div class="card__header">
              <h2 class="card__title">${item.title}</h2>
-             <p class="card__pill">${item.type}</p>
+             <p class="card__pill">${item.genres[2].name}</p>
          </div>
          <div class="card__footer">
              <button class="card__btn"><a class= "card__link" href="/public/views/details.html?id=${item.mal_id}">Read more >></a></button>
