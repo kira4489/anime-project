@@ -20,10 +20,10 @@ async function lorem() {
   console.log(response);
 
   details.innerHTML = `
-  <h1 class="title">${response.title}</h1>
   <div class="anime">
         <div class="anime__illustration">
           <figure class="anime__figure">
+          <h1 class="title">${response.title}</h1>
             <img class="anime__img" src=${response.image_url} alt="anime image">
           </figure>
         </div>
