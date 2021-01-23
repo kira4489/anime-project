@@ -84,6 +84,7 @@ input[type="email"] {
 
 .container-mobile__img {
   max-width: 80%;
+  margin-bottom: -4px;
 }
 
 @media (max-width: 900px) {
