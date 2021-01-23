@@ -72,7 +72,7 @@
 }
 
 .card__btn {   
-    background-color: var(--hover-color-text);
+    background-color: var(--btn-bg-color);
     color: var(--header-text-color);
     font-family: 'Boogaloo';
     padding: 1rem;
