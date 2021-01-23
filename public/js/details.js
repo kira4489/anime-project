@@ -29,9 +29,9 @@ async function ParamsId() {
         </div>
         <div class="anime__info">
           <div class="anime-pill">
-              <p class="anime-pill__pill anime-pill__pill--top">#${response.rank}</p>
-              <p class="anime-pill__pill anime-pill__pill--gender">${response.genres[2].name}</p>
-              <p class="anime-pill__pill anime-pill__pill--season">${response.premiered}</p>
+              <p class="anime-pill__pill anime-pill__pill--rank">#${response.rank}</p>
+              <p class="anime-pill__pill anime-pill__pill--genre">${response.genres[2].name}</p>
+              <p class="anime-pill__pill anime-pill__pill--premiered">${response.premiered}</p>
 
           </div>
           <p class="anime__details">${response.synopsis}</p>

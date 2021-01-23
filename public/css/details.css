@@ -4,9 +4,9 @@
 }
 
 :root {
-    --gender-color-pill: #FBB708;
-    --season-color-pill: #FB431B;
-    --top-color-pill: #1BAAFB;
+    --genre-color-pill: #FBB708;
+    --premiered-color-pill: #FB431B;
+    --rank-color-pill: #1BAAFB;
 }
 
 .title {
@@ -46,16 +46,16 @@
     font-family: 'Boogaloo';
 }
 
-.anime-pill__pill--top {
-    background-color: var(--top-color-pill);
+.anime-pill__pill--rank {
+    background-color: var(--rank-color-pill);
 }
 
-.anime-pill__pill--gender {
-    background-color: var(--gender-color-pill);
+.anime-pill__pill--genre {
+    background-color: var(--genre-color-pill);
 }
 
-.anime-pill__pill--season {
-    background-color: var(--season-color-pill);
+.anime-pill__pill--premiered {
+    background-color: var(--premiered-color-pill);
 }
 
 .anime__details {

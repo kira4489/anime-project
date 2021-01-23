@@ -25,8 +25,8 @@ function Numberten() {
       </div>
       <div class="ranking__right">
           <div class="anime-pill">
-              <p class="anime-pill__pill anime-pill__pill--gender">${item.genres[2].name}</p>
-              <p class="anime-pill__pill anime-pill__pill--season">${item.type}</p>
+              <p class="anime-pill__pill anime-pill__pill--genre">${item.genres[2].name}</p>
+              <p class="anime-pill__pill anime-pill__pill--type">${item.type}</p>
           </div>
           <p class="ranking__details">${item.synopsis}</p>
       </div>           

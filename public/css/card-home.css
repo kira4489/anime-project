@@ -7,9 +7,9 @@
     --main-bg-color: #212f3d;
     --header-text-color: #FFFFFF;
     --hover-text-color: #FBB708;
-    --gender-color-pill: #FBB708;
-    --season-color-pill: #FB431B;
-    --top-color-pill: #1BAAFB;
+    --genre-color-pill: #FBB708;
+    --premiered-color-pill: #FB431B;
+    --rank-color-pill: #1BAAFB;
     --btn-bg-color: #008487;
 }
 
@@ -59,7 +59,7 @@
     width: auto;
     border-radius: 24px;
     color: var(--header-text-color);
-    background-color: var(--gender-color-pill);
+    background-color: var(--genre-color-pill);
     font-family: 'Boogaloo';
 }
 

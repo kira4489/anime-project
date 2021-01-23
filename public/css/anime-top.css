@@ -4,8 +4,8 @@
 }
 
 :root {
-    --gender-color-pill: #FBB708;
-    --season-color-pill: #FB431B;
+    --genre-color-pill: #FBB708;
+    --type-color-pill: #ec1dec;
 }
 
 .ranking {
@@ -60,12 +60,12 @@
     font-family: 'Boogaloo';
 }
 
-.anime-pill__pill--gender {
-    background-color: var(--gender-color-pill);
+.anime-pill__pill--genre {
+    background-color: var(--genre-color-pill);
 }
 
-.anime-pill__pill--season {
-    background-color: var(--season-color-pill);
+.anime-pill__pill--type {
+    background-color: var(--type-color-pill);
 }
 
 .ranking__details {
