@@ -32,7 +32,7 @@ async function ParamsId() {
               <p class="anime-pill__pill anime-pill__pill--genre">${response.genres[2].name}</p>
               <p class="anime-pill__pill anime-pill__pill--premiered">${response.premiered}</p>
           </div>
-          <h1 class="title">${response.title}</h1>
+          <h1 class="anime__title">${response.title}</h1>
           <p class="anime__details">${response.synopsis}</p>
         </div>
       </div>

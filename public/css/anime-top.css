@@ -8,16 +8,15 @@
     --type-color-pill: #eb196e;
 }
 
-
 .title-top {
     text-align: center;
     font-family: 'Boogaloo', cursive;
     font-size: 1.5rem;
-    margin: 3rem;
+    margin: 5rem;
 }
 
 .ranking {
-    margin: 2rem 1rem 4rem 1rem;
+    margin: 2rem 1rem 7rem 1rem;
     padding-bottom: 2.5rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -29,6 +28,7 @@
 .ranking__number {
     font-size: 2rem;
     margin: 1rem;
+    color: rgb(173, 172, 172);
 }
 
 .ranking__title {
@@ -39,6 +39,7 @@
 .ranking__container {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 }
 
 .ranking__img {
@@ -75,7 +76,6 @@
     line-height: 1.5;
 }
 
- 
 @media screen and (min-width: 768px) {
     .title-top {
         font-size: 2rem;
@@ -105,11 +105,14 @@
     .ranking {
         margin-right: 6rem;
         margin-left: 6rem;
+        margin-bottom: 10rem;
     }
 
     .ranking__container {
         display: flex;
         flex-direction: row;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .ranking__header {    

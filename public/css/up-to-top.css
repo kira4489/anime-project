@@ -1,0 +1,28 @@
+
+.btn-top {
+    display: none;
+    position: fixed;
+    bottom: 150px;
+    right: 10px;
+    z-index: 99;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: var(--main-bg-color);
+    color: var(--hover-color-text);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.btn-top:hover {
+    background-color: rgb(187, 184, 184);
+}
+
+@media screen and (min-width: 992px) {
+    .btn-top {
+        bottom: 150px;
+        right: 30px;
+    }
+}
