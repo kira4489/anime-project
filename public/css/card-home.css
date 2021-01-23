@@ -6,7 +6,7 @@
 :root {
     --main-bg-color: #212f3d;
     --header-text-color: #FFFFFF;
-    --hover-text-color: #FBB708;
+    --hover-color-text: #eb196e;
     --genre-color-pill: #FBB708;
     --premiered-color-pill: #FB431B;
     --rank-color-pill: #1BAAFB;
@@ -21,8 +21,8 @@
 }
 
 .card {
-    margin: 2rem 2rem;
-    padding-bottom: 1.5rem;
+    margin: 2rem 1rem;
+    padding-bottom: 2rem;
     width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
@@ -34,48 +34,49 @@
 
 .card__img{
     width: 100%;
-    height: 350px;
+    height: 430px;
 }
 
 .card__body {
     display: flex;
     flex-direction: column;
+    padding-right: .4rem;
+    height: auto;
 }
 
 .card__title {
     text-align: left;
     font-family: 'Boogaloo';
     font-size: 2rem;
-    margin-top: .5rem;
-    margin-bottom: 1.5rem;
-    padding: .5rem .5rem .5rem 1rem;
+    padding-left: 1rem;
 }
+
+
+.card__footer {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
 
 .card__pill {
     display: inline;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: .2rem .8rem;
-    width: auto;
+    width: auto;  
+    padding: .5rem 1rem;
     border-radius: 24px;
     color: var(--header-text-color);
     background-color: var(--genre-color-pill);
     font-family: 'Boogaloo';
 }
 
-.card__footer {
-    text-align: right;
-}
-
-.card__btn {
-    margin-top: 1.5rem;
-    margin-right: 1rem;  
-    padding: .3rem .6rem;
-    background-color: var(--btn-bg-color);
+.card__btn {   
+    background-color: var(--hover-color-text);
     color: var(--header-text-color);
     font-family: 'Boogaloo';
-    border-radius: 20px;
-    box-shadow: none;
+    padding: 1rem;
+    border-radius: 50%;
 }
 
 .card__link {
@@ -86,8 +87,8 @@
 
 @media screen and (min-width: 768px) {   
     .card-container {
-        margin-left: 3rem;
-        margin-right: 3rem; 
+        margin-left: 1rem;
+        margin-right: 1rem; 
     }
 
     .card {
@@ -96,6 +97,7 @@
 
     .card__title {
         font-size: 2.5rem;
+        height: 7rem;
     }
 }
 
@@ -106,5 +108,6 @@
     }
     .card__title {
         font-size: 2rem;
+        height: 5rem;
     }
 }
