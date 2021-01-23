@@ -4,22 +4,22 @@
 }
 
 :root {
-    --gender-color-pill: #FBB708;
-    --season-color-pill: #FB431B;
+    --genre-color-pill: #FBB708;
+    --type-color-pill: #eb196e;
 }
 
-.ranking {
-    margin: 2rem 1rem 4rem 1rem;
-    padding: 1rem;
-    padding-bottom: 2.5rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 .title-top {
     text-align: center;
     font-family: 'Boogaloo', cursive;
     font-size: 1.5rem;
-    margin: 4rem;
+    margin: 3rem;
+}
+
+.ranking {
+    margin: 2rem 1rem 4rem 1rem;
+    padding-bottom: 2.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ranking__header {
@@ -28,20 +28,21 @@
 
 .ranking__number {
     font-size: 2rem;
+    margin: 1rem;
 }
 
 .ranking__title {
     font-family: 'Boogaloo', cursive;
     font-size: 1.5rem;
-    padding: 1rem;
+}
+
+.ranking__container {
+    display: flex;
+    flex-direction: column;
 }
 
 .ranking__img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    /* padding: 0 1.5rem; */
-    /* width: 100%; */
+    width: 100%;
 }
 
 .anime-pill {
@@ -54,68 +55,72 @@
     display: inline;
     border-radius: 24px;
     margin-right: .5rem;
-    padding: .2rem .8rem;
+    padding: .5rem 1rem;
     width: auto;
     color: var(--header-text-color);
     font-family: 'Boogaloo';
 }
 
-.anime-pill__pill--gender {
-    background-color: var(--gender-color-pill);
+.anime-pill__pill--genre {
+    background-color: var(--genre-color-pill);
 }
 
-.anime-pill__pill--season {
-    background-color: var(--season-color-pill);
+.anime-pill__pill--type {
+    background-color: var(--type-color-pill);
 }
 
 .ranking__details {
     text-align: left;
     padding: .5rem 1.5rem;
-    
+    line-height: 1.5;
 }
 
+ 
 @media screen and (min-width: 768px) {
     .title-top {
         font-size: 2rem;
     }   
 
     .ranking {
-        display: flex;
         margin-right: 3rem;
         margin-left: 3rem;
         padding: 1rem 2rem 2rem 2rem;
     }
 
-    .ranking__left {
-        width: 50%;
+    .ranking__number {
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
     }
-
-    .ranking__right {
-        width: 95%;
-        padding-top: 2rem;
+    
+    .ranking__title {
+        font-size: 2rem;
     }
 
     .anime-pill {
         justify-content: flex-end;
-        margin-top: 0;
-    }
-
-    .ranking__img {
-        margin: auto;
-        /* padding-top: 1rem; */
-        width: 100%;
-    }
-    
-    .ranking {
-        padding-top: 0 3rem .5rem 3rem;
-
     }
 }
 
 @media screen and (min-width: 992px) {
     .ranking {
-        margin-bottom: 4rem;
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-right: 6rem;
+        margin-left: 6rem;
     }
-}
+
+    .ranking__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ranking__header {    
+        margin-top: 1rem;
+    }
+
+    .ranking__left {
+        width: 40%;
+    }
+
+    .ranking__right {
+        width: 60%;
+    }
+} 

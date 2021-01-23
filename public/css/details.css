@@ -4,19 +4,13 @@
 }
 
 :root {
-    --gender-color-pill: #FBB708;
-    --season-color-pill: #FB431B;
-    --top-color-pill: #1BAAFB;
-}
-
-.title {
-    font-family: 'Boogaloo';
-    text-align: center;
-    margin-top: 2rem;
+    --genre-color-pill: #FBB708;
+    --premiered-color-pill: #FB431B;
+    --rank-color-pill: #1BAAFB;
 }
 
 .anime {
-    margin: 4rem 2rem;
+    margin: 3rem 1rem 4rem 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -30,66 +24,86 @@
 
 .anime-pill {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
-    margin-top: 2rem;
-    padding-right: 1.5rem;
+    margin-top: .5rem;
+    padding: .1rem;
 }
 
 .anime-pill__pill {
-    display: inline;
     border-radius: 24px;
-    margin-top: 1rem;
     margin-right: .5rem;
-    padding: .2rem .8rem;
+    padding: .5rem 1rem;
     width: auto;
     color: var(--header-text-color);
     font-family: 'Boogaloo';
 }
 
-.anime-pill__pill--top {
-    background-color: var(--top-color-pill);
+.anime-pill__pill--rank {
+    background-color: var(--rank-color-pill);
 }
 
-.anime-pill__pill--gender {
-    background-color: var(--gender-color-pill);
+.anime-pill__pill--genre {
+    background-color: var(--genre-color-pill);
 }
 
-.anime-pill__pill--season {
-    background-color: var(--season-color-pill);
+.anime-pill__pill--premiered {
+    background-color: var(--premiered-color-pill);
+}
+
+
+.title {
+    font-family: 'Boogaloo';
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 2rem;
+    padding-left: 1.5rem;
 }
 
 .anime__details {
     text-align: left;
     padding: 1.5rem;
     padding-bottom: 4rem;
+    line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
     .anime {
         display: flex;
-        justify-content: center;
-    }
-
-    .anime__illustration {
-        width: 30%;
-        padding-top: 2rem;
+        flex-direction: column;
+        margin-left: 7rem;
+        margin-right: 7rem;
     }
 
     .anime__info {
-        width: 50%;
-        margin-left: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    } 
+}
+
+@media screen and (min-width: 992px) {
+    .anime {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 5rem;
+        margin-right: 7rem;
+        margin-left: 7rem;
+    }
+
+    .anime__illustration {
+        width: 40%;
+        padding-top: 7rem;
+    }
+
+    .anime__info {
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .anime__img {
-        margin-bottom: 2rem;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .anime__img {
-        margin-top: 3rem;
+    .anime-pill {
+        display: flex;
+        flex-wrap: nowrap;
     }
 }

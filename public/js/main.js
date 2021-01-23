@@ -12,21 +12,21 @@ function Bring() {
           return;
         }
         content.innerHTML += `
-     <div class="card">
-        <figure class= "card__figure">
-            <img class="card__img" src=${item.image_url}>
-        </figure>    
-     <div class="card__body">
-         <div class="card__header">
-             <h2 class="card__title">${item.title}</h2>
-             <p class="card__pill">${item.genres[2].name}</p>
-         </div>
-         <div class="card__footer">
-             <button class="card__btn"><a class= "card__link" href="/public/views/details.html?id=${item.mal_id}">Read more >></a></button>
-         </div>
-         </div>
-         </div>
-     `;
+          <div class="card">
+              <div class="card__header">
+                  <figure class= "card__figure">
+                      <img class="card__img" src=${item.image_url}>
+                  </figure>    
+              </div>
+              <div class="card__body">
+                <h2 class="card__title">${item.title}</h2>        
+              </div>
+              <div class="card__footer">
+                <p class="card__pill">${item.genres[2].name}</p>
+                <button class="card__btn"><a class= "card__link" href="/public/views/details.html?id=${item.mal_id}"> <i class="fas fa-plus"></i></a></button>
+              </div>
+          </div>
+    `;
       });
     });
 }

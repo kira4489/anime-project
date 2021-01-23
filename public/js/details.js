@@ -23,17 +23,16 @@ async function ParamsId() {
   <div class="anime">
         <div class="anime__illustration">
           <figure class="anime__figure">
-          <h1 class="title">${response.title}</h1>
             <img class="anime__img" src=${response.image_url} alt="anime image">
           </figure>
         </div>
         <div class="anime__info">
           <div class="anime-pill">
-              <p class="anime-pill__pill anime-pill__pill--top">#${response.rank}</p>
-              <p class="anime-pill__pill anime-pill__pill--gender">${response.genres[2].name}</p>
-              <p class="anime-pill__pill anime-pill__pill--season">${response.premiered}</p>
-
+              <p class="anime-pill__pill anime-pill__pill--rank">#${response.rank}</p>
+              <p class="anime-pill__pill anime-pill__pill--genre">${response.genres[2].name}</p>
+              <p class="anime-pill__pill anime-pill__pill--premiered">${response.premiered}</p>
           </div>
+          <h1 class="title">${response.title}</h1>
           <p class="anime__details">${response.synopsis}</p>
         </div>
       </div>
