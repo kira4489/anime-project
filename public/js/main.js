@@ -23,7 +23,7 @@ function Bring() {
               </div>
               <div class="card__footer">
                 <p class="card__pill">${item.genres[2].name}</p>
-                <button class="card__btn"><a class= "card__link" href="/public/views/details.html?id=${item.mal_id}"> <i class="fas fa-plus"></i></a></button>
+                <button class="card__btn"><a class= "card__link" href="/public/views/details.html?id=${item.mal_id}"> <i class="fas fa-plus card__icon"></i></a></button>
               </div>
           </div>
     `;

@@ -17,7 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem auto;
+    margin: 3rem auto 4rem auto;
 }
 
 .card {
@@ -72,16 +72,23 @@
 }
 
 .card__btn {   
-    background-color: var(--btn-bg-color);
+   /*  background-color: var(--btn-bg-color); */
+   background-color: transparent;
     color: var(--header-text-color);
     font-family: 'Boogaloo';
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 50%;
+    border: 3px solid var(--btn-bg-color);
 }
 
 .card__link {
     color: var(--header-text-color);
     text-decoration: none;
+}
+
+.card__icon {
+    color: var(--btn-bg-color);
+    font-size: 24px;
 }
 
 
