@@ -112,11 +112,13 @@ input[type="email"] {
     padding-bottom: 14rem;
   }
   .contact-info__input form {
-    width: 60%;
+    width: 80%;
     display: block;
     margin: auto;
   }
   .contact-info__title {
     margin-top: 8rem;
+  }.contact-info__title{
+    color: var(--contact-colors);
   }
 }
