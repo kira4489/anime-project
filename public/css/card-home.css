@@ -73,12 +73,13 @@
 
 .card__btn {   
    /*  background-color: var(--btn-bg-color); */
-   background-color: transparent;
+    background-color: transparent;
     color: var(--header-text-color);
     font-family: 'Boogaloo';
     padding: .5rem;
-    border-radius: 50%;
-    border: 3px solid var(--btn-bg-color);
+    border: none;
+    /* border-radius: 50%;
+    border: 3px solid var(--btn-bg-color); */
 }
 
 .card__link {
