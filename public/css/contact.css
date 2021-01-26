@@ -79,6 +79,8 @@ input[type="email"] {
   color: var(--contact-colors);
   background: var(--contact-bg-color);
   padding-top: 10px;
+  display: block;
+  margin: auto;
   font-family: "paragraph";
 }
 
