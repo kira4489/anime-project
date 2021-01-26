@@ -8,14 +8,16 @@ function Numberten() {
   
  async function Numberesponse() {
   let red = await Numberten();
+  let count = 0
   console.log(red.anime);
   red.anime.map((item, index) => {
-    if (index > 20 && index < 30) {
+    if (index > 20 && index < 31) {
+      count +=1
       console.log(index)
       return (ran.innerHTML += `
         <section class="ranking">
           <div class="ranking__header">
-              <p class="ranking__number">#1</p>
+              <p class="ranking__number">${count}</p>
               <h2 class="ranking__title">${item.title}</h2>    
           </div>
 
