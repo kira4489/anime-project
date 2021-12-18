@@ -1,10 +1,6 @@
-var swiper = new Swiper(".swiper-container", {
-    pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-    },
+var swiper = new Swiper(".mySwiper", {
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-});
+  });
